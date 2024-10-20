@@ -156,6 +156,16 @@ main{
     border-radius: 0.8rem;
     background-color: var(--Grey700);
     border: none;
+    transition: all .2s ease-out;
+}
+
+.profile__content--links button:hover{
+    background-color: var(--Green);
+    cursor: pointer;
+}
+
+.profile__content--links button:hover a{
+    color: var(--Grey700);
 }
 
 .profile__content--links a{
@@ -167,6 +177,12 @@ main{
   font-size: 11px;
   text-align: center;
   color: var(--White);
+  position: absolute;
+  top: 96dvh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .attribution a {
