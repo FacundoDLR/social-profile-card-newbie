@@ -188,3 +188,19 @@ main{
 .attribution a {
   color: var(--White);
 }
+
+@media (480px <= width <= 768px) { 
+
+    .socialCard{
+        width: 45.6rem;
+        height: 61.1rem;
+    }
+
+ }
+
+ @media (width >= 768px) {
+    .socialCard{
+        width: 38.4rem;
+        height: 61.1rem;
+    }
+ }
