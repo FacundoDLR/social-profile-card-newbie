@@ -34,8 +34,7 @@ html {
 
 :root {
   /* VARIABLES DE FUENTE */
-  --font-family-heading: "Inter", sans-serif;
-  --font-family-body: "Inter", sans-serif;
+  --font-family: "Inter", sans-serif;
 
   /* TIPOGRAFÍA */
   --font-size-heading: 2.4rem;
@@ -64,11 +63,112 @@ html {
   --spacing50: 0.4rem;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+body{
+    height: 100dvh;
+    width: 100dvw;
+}
+
+main{
+    background-color: var(--Grey900);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialCard{
+    background-color: var(--Grey800);
+    width: 32.7rem;
+    height: 57.9rem;
+    padding: var(--spacing300);
+    border-radius: 1.2rem;
+}
+
+.profile__content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing300);
+}
+
+.profile__content img{
+    width: 8.8rem;
+    height: 8.8rem;
+    border-radius: 50%;
+}
+
+.profile__content--info{
+    width: 100%;
+    text-align: center;
+    height: 6.1rem;
+}
+
+.profile__content--info h2{
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-semiBold);
+    line-height: var(--line-height);
+    letter-spacing: 0;
+    color: var(--White);
+}
+
+.profile__content--info h3,
+.placeholder {
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height);
+    letter-spacing: 0;
+}
+
+.profile__content--info h3{
+    color: var(--Green);
+}
+
+.profile__content--bio{
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height);
+    letter-spacing: 0;
+    color: var(--White);
+}
+
+.profile__content--links{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile__content--links button{
+    height: 4.5rem;
+    border-radius: 0.8rem;
+    background-color: var(--Grey700);
+    border: none;
+}
+
+.profile__content--links a{
+    color: var(--White);
+    text-decoration: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--White);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--White);
 }
