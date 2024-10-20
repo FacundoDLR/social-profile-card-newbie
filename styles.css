@@ -194,6 +194,7 @@ main{
     .socialCard{
         width: 45.6rem;
         height: 61.1rem;
+        padding: var(--spacing500);
     }
 
  }
@@ -202,5 +203,6 @@ main{
     .socialCard{
         width: 38.4rem;
         height: 61.1rem;
+        padding: var(--spacing500);
     }
  }
