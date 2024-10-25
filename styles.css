@@ -123,7 +123,7 @@ main{
     color: var(--White);
 }
 
-.profile__content--info h3,
+.profile__content--info h2,
 .placeholder {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-bold);
@@ -131,7 +131,7 @@ main{
     letter-spacing: 0;
 }
 
-.profile__content--info h3{
+.profile__content--info h2{
     color: var(--Green);
 }
 
