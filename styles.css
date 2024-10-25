@@ -173,7 +173,7 @@ main{
     cursor: pointer;
 }
 
-.profile__content--links button:hover a{
+.profile__content--links li:hover a{
     color: var(--Grey700);
 }
 
